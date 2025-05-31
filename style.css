@@ -1,0 +1,94 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fefefe;
+  color: #333;
+}
+
+header {
+  background: #ff8a65;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  padding: 1rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+#menu-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input, select, textarea, button {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f4511e;
+}
+
+#menus {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.menu-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.menu-card .content {
+  padding: 0.5rem;
+}
+
+.menu-card h3 {
+  margin: 0;
+}
+
+.menu-card .price {
+  color: #ff7043;
+  font-weight: bold;
+}
+
+.menu-card .category {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.menu-card .note {
+  font-size: 0.85rem;
+  color: #444;
+  margin-top: 0.5rem;
+}
+
+.menu-card button {
+  margin-top: 0.5rem;
+  background: #e57373;
+}
